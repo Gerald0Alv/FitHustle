@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitHustle – Recharge Your Life Naturally</title>
+  <meta name="description" content="A clean, high-converting landing page for wellness affiliate offers. Built for Pinterest + SEO traffic with clear CTAs, trust elements, and bonus stacking." />
+  <meta name="p:domain_verify" content="1a5444ac020609bf2790e7218e68ce43"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #0f172a;
+      --muted: #93a2b8;
+      --accent: #5eead4;
+      --accent-2: #a78bfa;
+      --ring: #22d3ee;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --danger: #f87171;
+    }
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+    .glass { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08); }
+    .gradient-text { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.1rem; border-radius: 999px; font-weight: 600; }
+    .btn-primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0b1020; }
+    .btn-primary:hover { filter: brightness(1.05); }
+    .btn-ghost { border: 1px solid rgba(255,255,255,0.14); color: white; }
+    .ring-focus:focus { outline: none; box-shadow: 0 0 0 4px rgba(34,211,238,.35); }
+    .container-prose p { color: #cbd5e1; }
+  </style>
+  
+  <!-- Open Graph for Pinterest & Social -->
+  <meta property="og:title" content="FitHustle – Recharge Your Life Naturally" />
+  <meta property="og:description" content="Wellness recommendations that actually help. Evidence-aware, habit-first, product-second. Bonuses when you buy via our link." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Schema (adjust as needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FitHustle",
+    "url": "https://yourdomain.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://yourdomain.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body class="bg-[var(--bg)] text-white">
+
+  <!-- Announcement / Compliance bar -->
+  <div class="text-center text-xs md:text-sm bg-slate-900/60 py-2 border-b border-white/10">
+    This page contains affiliate links. If you buy through our links, we may earn a commission at no extra cost to you.
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-[var(--bg)]/75 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-2xl bg-gradient-to-br from-[var(--accent)] to-[var(--accent-2)]"></div>
+        <span class="font-extrabold tracking-tight">FitHustle</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#how" class="hover:text-white">How it works</a>
+        <a href="#products" class="hover:text-white">Top picks</a>
+        <a href="#bonuses" class="hover:text-white">Bonuses</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+      </nav>
+      <a href="#optin" class="btn btn-primary">Free 7‑Day Energy Reset</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(94,234,212,0.15),transparent_40%),radial-gradient(ellipse_at_bottom_left,rgba(167,139,250,0.12),transparent_35%)]"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-[var(--accent)] font-semibold tracking-wide uppercase text-xs">evidence-aware wellness</p>
+        <h1 class="text-4xl md:text-6xl font-black leading-tight mt-3">Recharge your life <span class="gradient-text">naturally</span>.</h1>
+        <p class="text-slate-300 mt-5 text-lg">Simple routines, smart nutrition, and a few curated tools. No hype. No overwhelm. Just what moves the needle.</p>
+        <div class="flex flex-col sm:flex-row gap-3 mt-7">
+          <a href="#products" class="btn btn-primary ring-focus">See top picks</a>
+          <a href="#how" class="btn btn-ghost ring-focus">How this works</a>
+        </div>
+        <div class="flex items-center gap-3 mt-6 text-sm text-slate-400">
+          <div class="flex -space-x-2">
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop" alt=""/>
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop" alt=""/>
+            <img class="w-8 h-8 rounded-full border border-white/20" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=120&auto=format&fit=crop" alt=""/>
+          </div>
+          <span>Trusted by 12,000+ monthly readers</span>
+        </div>
+      </div>
+      <div class="glass rounded-3xl p-6 md:p-8">
+        <div class="text-xs text-slate-400 uppercase tracking-wider">Starter plan</div>
+        <div class="mt-2 text-3xl font-extrabold">7‑Day Energy Reset</div>
+        <p class="text-slate-300 mt-2">A bite-sized habit sprint. Daily micro-actions for sleep, movement, and nutrition that compound fast.</p>
+        <ul class="mt-4 space-y-2 text-slate-300">
+          <li>• 10-minute morning mobility</li>
+          <li>• 2‑minute "movement snacks" protocol</li>
+          <li>• High-satiety meal blueprint</li>
+          <li>• Evening wind‑down stack</li>
+        </ul>
+         <a href="#optin" class="btn btn-primary mt-6 w-full justify-center">Get the free plan</a>
+<p class="text-xs text-slate-500 mt-3">Join free. No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-3xl p-6">
+        <div class="text-sm text-[var(--accent)] font-semibold">1. Learn</div>
+        <h3 class="text-xl font-bold mt-1">Simple guides that cut noise</h3>
+        <p class="text-slate-300 mt-2">Short, actionable explainers. You understand the why before any recommendation.</p>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <div class="text-sm text-[var(--accent)] font-semibold">2. Apply</div>
+        <h3 class="text-xl font-bold mt-1">Tiny habits with big upside</h3>
+        <p class="text-slate-300 mt-2">We prioritize sleep, movement, and nutrient density—then layer in tools.</p>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <div class="text-sm text-[var(--accent)] font-semibold">3. Upgrade</div>
+        <h3 class="text-xl font-bold mt-1">Curated products that help</h3>
+        <p class="text-slate-300 mt-2">Only a few picks per goal. Transparent pros/cons and alternatives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product picks -->
+  <section id="products" class="max-w-7xl mx-auto px-4 py-8 md:py-10">
+    <div class="flex items-end justify-between">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Top Picks This Month</h2>
+      <a href="#disclaimer" class="text-sm text-slate-400 hover:text-slate-200">Read our review policy</a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-6">
+      <!-- Product card 1 -->
+      <article class="glass rounded-3xl overflow-hidden flex flex-col">
+        <img src="IMG/Mitochondrial.png" alt="Supplement bottle" class="h-48 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="text-xs text-[var(--accent)] uppercase tracking-wider">Energy</div>
+          <h3 class="text-xl font-bold mt-1">Advanced Mitochondrial Formula</h3>
+          <p class="text-slate-300 mt-2">Supports cellular energy, focus, and healthy aging with evidence‑aware dosages.</p>
+          <ul class="text-sm text-slate-400 mt-2 space-y-1">
+            <li>• CoQ10 + PQQ + ALCAR</li>
+            <li>• Third‑party tested</li>
+            <li>• 60‑day guarantee</li>
+          </ul>
+          <div class="mt-4 flex items-center gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-emerald-500/15 text-emerald-300">Editor’s pick</span>
+            <span class="px-2 py-1 rounded-full bg-sky-500/15 text-sky-300">Recurring 20% off</span>
+          </div>
+          <a href="https://www.advancedbionutritionals.com/DS24/Advanced-Mitochondrial/Too-Tired-To-Enjoy-It/HD.htm#aff=Gerald0123" class="btn btn-primary mt-5 justify-center" target="_blank" rel="nofollow noopener sponsored">See best price</a>
+        </div>
+      </article>
+
+      <!-- Product card 2 -->
+      <article class="glass rounded-3xl overflow-hidden flex flex-col">
+        <img src="IMG/EchoXen.png" alt="Earbuds representing hearing" class="h-48 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="text-xs text-[var(--accent)] uppercase tracking-wider">Hearing</div>
+          <h3 class="text-xl font-bold mt-1">EchoXen Hearing Support</h3>
+          <p class="text-slate-300 mt-2">A gentle stack for clarity and calm. Pairs well with sound therapy basics.</p>
+          <ul class="text-sm text-slate-400 mt-2 space-y-1">
+            <li>• Magnesium + Ginkgo blend</li>
+            <li>• Habit protocol included</li>
+            <li>• 90‑day guarantee</li>
+          </ul>
+          <div class="mt-4 flex items-center gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-violet-500/15 text-violet-300">Great for beginners</span>
+          </div>
+          <a href="https://www.checkout-ds24.com/redir/578369/Gerald0123" class="btn btn-primary mt-5 justify-center" target="_blank" rel="nofollow noopener sponsored">Check availability</a>
+        </div>
+      </article>
+
+      <!-- Product card 3 -->
+      <article class="glass rounded-3xl overflow-hidden flex flex-col">
+        <img src="IMG/Book.jpg" alt="Healthy foods" class="h-48 w-full object-cover"/>
+        <div class="p-6 flex-1 flex flex-col">
+          <div class="text-xs text-[var(--accent)] uppercase tracking-wider">Nutrition</div>
+          <h3 class="text-xl font-bold mt-1">The Encyclopedia of Power Foods</h3>
+          <p class="text-slate-300 mt-2">A practical field guide to high‑leverage foods for energy, focus, and recovery.</p>
+          <ul class="text-sm text-slate-400 mt-2 space-y-1">
+            <li>• High‑satiety recipe pack</li>
+            <li>• Shopping lists + swaps</li>
+            <li>• 30‑day updates</li>
+          </ul>
+          <div class="mt-4 flex items-center gap-2 text-sm">
+            <span class="px-2 py-1 rounded-full bg-amber-500/15 text-amber-300">Best value</span>
+          </div>
+          <a href="https://wsl.365dailyhealth.com/landing-sale-page1713272576177?aff=Gerald0123" class="btn btn-primary mt-5 justify-center" target="_blank" rel="nofollow noopener sponsored">Get the guide</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pros & Cons / Comparisons -->
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <div class="glass rounded-3xl p-6">
+        <h4 class="text-lg font-bold">Why we picked these</h4>
+        <ul class="mt-3 text-slate-300 space-y-2">
+          <li>• Transparent formulas and testing</li>
+          <li>• Clear guarantees and customer support</li>
+          <li>• Pair well with foundational habits</li>
+        </ul>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <h4 class="text-lg font-bold">What to consider</h4>
+        <ul class="mt-3 text-slate-300 space-y-2">
+          <li>• Supplements amplify habits—they don’t replace them</li>
+          <li>• Check for interactions with your medications</li>
+          <li>• Start low, assess weekly, iterate</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="glass rounded-3xl p-6">
+        <div class="text-3xl font-black">+72%</div>
+        <div class="text-slate-400">avg. reported energy after 21 days*</div>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <div class="text-3xl font-black">9.2/10</div>
+        <div class="text-slate-400">reader satisfaction score</div>
+      </div>
+      <div class="glass rounded-3xl p-6">
+        <div class="text-3xl font-black">12k+</div>
+        <div class="text-slate-400">monthly readers</div>
+      </div>
+    </div>
+    <p class="text-xs text-slate-500 mt-3">*Self-reported via weekly check-ins. Not medical advice.</p>
+  </section>
+
+  <!-- Bonus stack -->
+  <section id="bonuses" class="max-w-7xl mx-auto px-4 py-6 md:py-10">
+    <div class="glass rounded-3xl p-6 md:p-8 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <h3 class="text-2xl font-extrabold">Grab our bonus stack when you buy via our links</h3>
+        <ul class="mt-4 text-slate-300 space-y-2">
+          <li>• <span class="font-semibold">7‑Day Energy Reset</span> (PDF + checklist)</li>
+          <li>• <span class="font-semibold">High‑Satiety Recipe Pack</span> (20 quick meals)</li>
+          <li>• <span class="font-semibold">Mini Course:</span> Sleep reset in 3 nights</li>
+        </ul>
+        <p class="text-slate-400 text-sm mt-3">Email receipt to <span class="underline">bonus@yourdomain.com</span> to claim within 14 days.</p>
+      </div>
+      <div class="rounded-3xl bg-gradient-to-br from-emerald-600/20 to-cyan-600/20 p-6 border border-white/10">
+        <h4 class="text-lg font-bold">How to claim</h4>
+        <ol class="mt-3 space-y-2 text-slate-300">
+          <li>1. Click any product and complete purchase</li>
+          <li>2. Forward your receipt to bonus@yourdomain.com</li>
+          <li>3. We’ll send your bonuses within 24 hours</li>
+        </ol>
+        <a href="#products" class="btn btn-primary mt-5 inline-flex">Shop top picks</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opt-in -->
+  <section id="optin" class="max-w-3xl mx-auto px-4 py-16">
+    <div class="glass rounded-3xl p-6 md:p-10">
+      <h3 class="text-2xl md:text-3xl font-extrabold">Free: 7‑Day Energy Reset</h3>
+      <p class="text-slate-300 mt-2">Enter your email to get the mini plan + weekly evidence-aware tips. No spam, unsubscribe anytime.</p>
+      <form id="subscribe-form" class="ml-block-form mt-6"
+            action="https://assets.mailerlite.com/jsonp/1764265/forms/163989040458106195/subscribe"
+            method="post" target="hidden_iframe">
+
+            <div class="flex flex-col sm:flex-row gap-3">
+              <input type="email" name="fields[email]" placeholder="Enter your email" required
+                class="flex-1 px-4 py-2 rounded-lg border border-gray-300 text-gray-900">
+
+              <button type="submit"
+                class="btn btn-primary w-full sm:w-auto justify-center">
+                Send me the plan
+              </button>
+            </div>
+          </form>
+
+          <!-- Hidden iframe for MailerLite -->
+          <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+          <!-- Thank you message (hidden at first) -->
+          <p id="thank-you-message" class="hidden text-green-400 mt-3">
+            🎉 Thank you for subscribing! Please check your inbox and confirm your email.  
+            📬 If you don’t see it, check your <strong>Spam or Promotions</strong> folder just in case.
+          </p>
+
+          <p class="text-xs text-slate-500 mt-3">We respect your privacy. We'll never share your email.</p>
+
+          <script>
+            const form = document.getElementById("subscribe-form");
+            const message = document.getElementById("thank-you-message");
+
+            form.addEventListener("submit", function () {
+              setTimeout(() => {
+                message.classList.remove("hidden"); // Show thank-you note
+                form.reset(); // Clear form after submission
+              }, 1000); // wait 1s to simulate success
+            });
+          </script>
+    </div>
+  </section>
+
+  <!-- Educational teaser (for SEO/Pinterest pins to land on) -->
+  <section class="max-w-6xl mx-auto px-4 pb-20">
+    <article class="glass rounded-3xl p-6 md:p-10 container-prose">
+      <h3 class="text-2xl md:text-3xl font-extrabold">Why you’re tired: the 80/20 of energy</h3>
+      <p class="mt-3">Before any supplement, nail these basics. Here’s the condensed playbook we recommend to readers.</p>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div>
+          <h4 class="font-semibold">Sleep</h4>
+          <p>Consistent wake time, morning light, caffeine cutoff 8h before bed, wind‑down ritual.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Movement</h4>
+          <p>Minimum effective dose: 6–8k steps + 2× weekly strength + movement snacks.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Nutrition</h4>
+          <p>Protein anchor each meal, high‑satiety foods first, hydrate with electrolytes as needed.</p>
+        </div>
+      </div>
+      <a href="#products" class="btn btn-primary mt-6 inline-flex">See our recommended tools</a>
+    </article>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-5xl mx-auto px-4 pb-24">
+    <h3 class="text-2xl font-extrabold">Frequently asked questions</h3>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <details class="glass rounded-3xl p-6 group">
+        <summary class="cursor-pointer font-semibold">Are these products medical advice?</summary>
+        <p class="mt-3 text-slate-300">No. We share educational content and personal recommendations. Always consult your healthcare provider.</p>
+      </details>
+      <details class="glass rounded-3xl p-6 group">
+        <summary class="cursor-pointer font-semibold">Do you get paid if I buy?</summary>
+        <p class="mt-3 text-slate-300">Yes—at no extra cost to you. We only recommend products we’d use or give to family. Commissions keep content free.</p>
+      </details>
+      <details class="glass rounded-3xl p-6 group">
+        <summary class="cursor-pointer font-semibold">What if I don’t see results?</summary>
+        <p class="mt-3 text-slate-300">Start with the habits first. If a product has a guarantee, we link it. Email us and we’ll help troubleshoot your routine.</p>
+      </details>
+      <details class="glass rounded-3xl p-6 group">
+        <summary class="cursor-pointer font-semibold">Can I get the bonuses later?</summary>
+        <p class="mt-3 text-slate-300">Bonuses are available for 14 days post‑purchase. Forward your receipt to <span class="underline">bonus@yourdomain.com</span>.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-10 text-sm text-slate-400 grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-semibold text-white">FitHustle</div>
+        <p class="mt-2">Evidence-aware wellness guides, habit-first protocols, and a few curated tools.</p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <div class="font-semibold text-white mb-2">Navigate</div>
+          <ul class="space-y-2">
+            <li><a href="#how" class="hover:text-white">How it works</a></li>
+            <li><a href="#products" class="hover:text-white">Top picks</a></li>
+            <li><a href="#bonuses" class="hover:text-white">Bonuses</a></li>
+            <li><a href="#faq" class="hover:text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-semibold text-white mb-2">Legal</div>
+          <ul class="space-y-2">
+            <li><a href="#disclaimer" class="hover:text-white">Affiliate Disclosure</a></li>
+            <li><a href="#privacy" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="#terms" class="hover:text-white">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Get the free plan</div>
+        <p class="mt-2">Join 12,000+ readers. Weekly playbooks, zero spam.</p>
+        <form class="mt-3 flex gap-2" action="#" method="post" onsubmit="handleSubmit(event)">
+          <input required type="email" placeholder="you@domain.com" class="ring-focus w-full rounded-full px-4 py-2 bg-slate-900/60 border border-white/10 placeholder:text-slate-500" />
+          <button class="btn btn-primary" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center text-xs text-slate-500 pb-10">© <span id="year"></span> FitHustle. All rights reserved.</div>
+  </footer>
+
+  <!-- Hidden sections (disclosure, policies) -->
+  <section id="disclaimer" class="max-w-4xl mx-auto px-4 pb-20">
+    <h4 class="text-lg font-semibold">Affiliate & Medical Disclosure</h4>
+    <p class="text-slate-400 mt-2 text-sm">We may earn commissions from purchases made through our links. The content on this site is for educational purposes only and does not substitute professional medical advice.</p>
+  </section>
+
+  <section id="privacy" class="max-w-4xl mx-auto px-4 pb-20">
+    <h4 class="text-lg font-semibold">Privacy Policy (Starter)</h4>
+    <p class="text-slate-400 mt-2 text-sm">We collect email addresses voluntarily to deliver guides and updates. We do not sell personal data. You can unsubscribe at any time.</p>
+  </section>
+
+  <section id="terms" class="max-w-4xl mx-auto px-4 pb-24">
+    <h4 class="text-lg font-semibold">Terms (Starter)</h4>
+    <p class="text-slate-400 mt-2 text-sm">By using this website you agree to our standard terms of use. Content is provided "as is" without warranties of any kind.</p>
+  </section>
+
+
+  <!-- Minimal JS for demo -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      alert('Thanks! Connect your email service (ConvertKit, Beehiiv, MailerLite, etc.) by replacing the form action.');
+    }
+  </script>
+
+  <!-- TODO: Replace with your analytics / pixels -->
+  <!-- <script>/* Meta Pixel / GA / Pinterest Tag here */</script> -->
+
+</body>
+</html>
